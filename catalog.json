@@ -2,7 +2,7 @@
   "name": "Giordano's AI Coding Tools",
   "owner": "giordanorec",
   "description": "Catálogo central das ferramentas de AI coding do Giordano (plugins, skills, MCP). Cada ferramenta vive no seu próprio repo; este hub indexa tudo e documenta como instalar em cada ambiente de IA.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "claude_code_marketplace": "giordanorec/ai-coding-tools",
   "universal_skill_installer": "npx skills@latest add <repo>/<skill>",
   "hosts": ["claude-code", "codex", "cursor", "gemini-cli", "aider", "windsurf", "other"],
@@ -21,7 +21,7 @@
           "method": "plugin",
           "steps": [
             "claude plugin marketplace add giordanorec/ai-coding-tools",
-            "claude plugin install mad"
+            "claude plugin install mad@giordanorec"
           ]
         },
         "other": {
@@ -44,7 +44,7 @@
           "method": "plugin",
           "steps": [
             "claude plugin marketplace add giordanorec/ai-coding-tools",
-            "claude plugin install claude-brainstorm-multiagent"
+            "claude plugin install claude-brainstorm-multiagent@giordanorec"
           ]
         },
         "other": {
@@ -98,7 +98,7 @@
           "method": "plugin",
           "steps": [
             "claude plugin marketplace add giordanorec/ai-coding-tools",
-            "claude plugin install multiagentes-giordano"
+            "claude plugin install multiagentes-giordano@giordanorec"
           ]
         },
         "other": {

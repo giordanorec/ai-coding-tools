@@ -30,16 +30,25 @@ documenta **como instalar em cada ambiente de IA** (Claude Code, Codex, Cursor, 
 
 ### No Claude Code (plugins)
 
-Adicione o catálogo **uma vez** e instale o que quiser:
+Adicione o catálogo **uma vez**, instale o que quiser e **recarregue**:
 
 ```
 /plugin marketplace add giordanorec/ai-coding-tools
-/plugin install mad
-/plugin install claude-brainstorm-multiagent
-/plugin install multiagentes-giordano
+/plugin install mad@giordanorec
+/plugin install claude-brainstorm-multiagent@giordanorec
+/plugin install multiagentes-giordano@giordanorec
+/reload-plugins
 ```
 
-(Pela CLI: troque `/plugin` por `claude plugin`.) Abra uma sessão nova para carregar.
+> **Sempre use o sufixo `@giordanorec`** (o nome do marketplace). Sem ele, numa
+> máquina que já tenha outros marketplaces o Claude Code responde
+> `Plugin "mad" not found in any marketplace`.
+>
+> Os comandos do plugin (ex.: `/mad-init`) **só aparecem depois** do
+> `/reload-plugins` — ou de abrir uma sessão nova. Se `/mad-init` der
+> `Unknown command` logo após instalar, foi isso: rode `/reload-plugins`.
+
+(Pela CLI: troque `/plugin` por `claude plugin` — ex.: `claude plugin install mad@giordanorec`.)
 
 ### Skills cross-tool (Codex, Cursor, Gemini CLI, Aider, Windsurf, ...)
 

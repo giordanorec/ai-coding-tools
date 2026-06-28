@@ -33,9 +33,13 @@
 - **Claude Code (plugins):**
   ```
   claude plugin marketplace add giordanorec/ai-coding-tools
-  claude plugin install <id>
+  claude plugin install <id>@giordanorec
   ```
-  (Dentro do Claude Code: `/plugin marketplace add ...` e `/plugin install ...`.)
+  (Dentro do Claude Code: `/plugin marketplace add ...` e `/plugin install <id>@giordanorec`.)
+  Sempre inclua o sufixo `@giordanorec` (nome do marketplace) — sem ele o host
+  pode responder `Plugin "<id>" not found in any marketplace`. Depois do install,
+  rode `/reload-plugins` (ou abra sessão nova) para os comandos do plugin
+  aparecerem; confirme que o comando existe antes de reportar sucesso.
 
 - **Skills (cross-tool — Codex, Cursor, Gemini CLI, Aider, Windsurf, e também
   Claude Code):**
